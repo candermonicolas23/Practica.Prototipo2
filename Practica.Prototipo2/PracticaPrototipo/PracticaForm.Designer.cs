@@ -40,6 +40,15 @@
             textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            label6 = new Label();
+            comboBox2 = new ComboBox();
+            label7 = new Label();
+            label8 = new Label();
+            textBox2 = new TextBox();
+            comboBox3 = new ComboBox();
+            label9 = new Label();
+            textBox3 = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -137,7 +146,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(526, 407);
+            button1.Location = new Point(526, 572);
             button1.Name = "button1";
             button1.Size = new Size(130, 34);
             button1.TabIndex = 10;
@@ -146,18 +155,104 @@
             // 
             // button2
             // 
-            button2.Location = new Point(676, 407);
+            button2.Location = new Point(676, 572);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 11;
             button2.Text = "Cerrar";
             button2.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(12, 245);
+            label6.Name = "label6";
+            label6.Size = new Size(331, 25);
+            label6.TabIndex = 12;
+            label6.Text = "Detalle de la mercaderia a despachar:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(12, 318);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(331, 33);
+            comboBox2.TabIndex = 14;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 290);
+            label7.Name = "label7";
+            label7.Size = new Size(154, 25);
+            label7.TabIndex = 13;
+            label7.Text = "Deposito a retirar:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(12, 370);
+            label8.Name = "label8";
+            label8.Size = new Size(152, 25);
+            label8.TabIndex = 15;
+            label8.Text = "Cantidad a retirar:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(170, 370);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(177, 31);
+            textBox2.TabIndex = 16;
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(457, 318);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(249, 33);
+            comboBox3.TabIndex = 18;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(457, 290);
+            label9.Name = "label9";
+            label9.Size = new Size(88, 25);
+            label9.TabIndex = 17;
+            label9.Text = "Prioridad:";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(615, 370);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(171, 31);
+            textBox3.TabIndex = 20;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(457, 370);
+            label10.Name = "label10";
+            label10.Size = new Size(152, 25);
+            label10.TabIndex = 19;
+            label10.Text = "DNI transportista:";
+            // 
             // PracticaForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 618);
+            Controls.Add(textBox3);
+            Controls.Add(label10);
+            Controls.Add(comboBox3);
+            Controls.Add(label9);
+            Controls.Add(textBox2);
+            Controls.Add(label8);
+            Controls.Add(comboBox2);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
@@ -190,5 +285,14 @@
         private TextBox textBox1;
         private Button button1;
         private Button button2;
+        private Label label6;
+        private ComboBox comboBox2;
+        private Label label7;
+        private Label label8;
+        private TextBox textBox2;
+        private ComboBox comboBox3;
+        private Label label9;
+        private TextBox textBox3;
+        private Label label10;
     }
 }
