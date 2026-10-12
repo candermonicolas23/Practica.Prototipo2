@@ -49,6 +49,14 @@
             label9 = new Label();
             textBox3 = new TextBox();
             label10 = new Label();
+            label11 = new Label();
+            listView1 = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -146,7 +154,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(526, 572);
+            button1.Location = new Point(526, 645);
             button1.Name = "button1";
             button1.Size = new Size(130, 34);
             button1.TabIndex = 10;
@@ -155,7 +163,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(676, 572);
+            button2.Location = new Point(676, 645);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 11;
@@ -209,15 +217,15 @@
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(457, 318);
+            comboBox3.Location = new Point(383, 318);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(249, 33);
+            comboBox3.Size = new Size(405, 33);
             comboBox3.TabIndex = 18;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(457, 290);
+            label9.Location = new Point(383, 290);
             label9.Name = "label9";
             label9.Size = new Size(88, 25);
             label9.TabIndex = 17;
@@ -225,25 +233,80 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(615, 370);
+            textBox3.Location = new Point(541, 370);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(171, 31);
+            textBox3.Size = new Size(247, 31);
             textBox3.TabIndex = 20;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(457, 370);
+            label10.Location = new Point(383, 370);
             label10.Name = "label10";
             label10.Size = new Size(152, 25);
             label10.TabIndex = 19;
             label10.Text = "DNI transportista:";
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(16, 426);
+            label11.Name = "label11";
+            label11.Size = new Size(268, 25);
+            label11.TabIndex = 22;
+            label11.Text = "Detalle Orden de Preparacion:";
+            // 
+            // listView1
+            // 
+            listView1.BorderStyle = BorderStyle.FixedSingle;
+            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            listView1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listView1.Location = new Point(20, 466);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(768, 146);
+            listView1.TabIndex = 23;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Tag = "";
+            columnHeader1.Text = "Fecha de Entrega";
+            columnHeader1.Width = 120;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "N Orden de Preparacion";
+            columnHeader2.Width = 220;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Razon Social";
+            columnHeader3.Width = 130;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "CUIT Cliente";
+            columnHeader4.Width = 120;
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Producto";
+            columnHeader5.Width = 100;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Cantidad";
+            // 
             // PracticaForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 618);
+            ClientSize = new Size(800, 691);
+            Controls.Add(listView1);
+            Controls.Add(label11);
             Controls.Add(textBox3);
             Controls.Add(label10);
             Controls.Add(comboBox3);
@@ -294,5 +357,13 @@
         private Label label9;
         private TextBox textBox3;
         private Label label10;
+        private Label label11;
+        private ListView listView1;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
     }
 }
