@@ -10,10 +10,11 @@ namespace Practica.Prototipo2.PracticaPrototipo
 {
     public partial class PracticaForm : Form
     {
-        private readonly PracticaModelo modelo = new ();
+        private readonly PracticaModelo modelo = new();
         public PracticaForm()
         {
             InitializeComponent();
         }
+
     }
 }
